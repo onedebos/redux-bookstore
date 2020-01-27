@@ -1,17 +1,15 @@
 import React from 'react';
-import BooksForm from './BooksForm';
-import BooksList from './BooksList';
+import BooksForm from '../containers/BooksForm';
+import BooksList from '../containers/BooksList';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <BooksList />
-        <BooksForm />
-      </div>
+function App() {
+  return (
+    <div>
+      <BooksList />
+      <BooksForm />
+    </div>
 
-    );
-  }
+  );
 }
 
 export default App;

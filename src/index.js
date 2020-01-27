@@ -1,29 +1,29 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import {Provider} from 'react-redux'
-import bookReducer from '../src/reducers/books'
-import App from '../src/components/App';
-import "./index.css";
-import { createStore } from "redux";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import bookReducer from './reducers/books';
+import App from './components/App';
+import './index.css';
 
 const initialState = [
-    {
-        id: Math.round(Math.random() * 1000),
-        title: 'Book 1',
-        category: 'Biography'
-    }, 
-    {
-        id: Math.round(Math.random() * 1000),
-        title: 'Book 2',
-        category: 'Learning'
-    }
-]
+  {
+    id: Math.round(Math.random() * 1000),
+    title: 'Book 1',
+    category: 'Biography',
+  },
+  {
+    id: Math.round(Math.random() * 1000),
+    title: 'Book 2',
+    category: 'Learning',
+  },
+];
 
-const store = createStore(bookReducer, initialState)
+const store = createStore(bookReducer, { books: initialState });
 
 ReactDOM.render(
-    <Provider store={store}>
+  <Provider store={store}>
     <App />
-    </Provider>, 
-    document.getElementById("root"));
-
+  </Provider>,
+  document.getElementById('root'),
+);
