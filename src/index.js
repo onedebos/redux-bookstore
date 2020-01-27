@@ -1,9 +1,29 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import bookReducer from './reducers/books';
+import App from './components/App';
+import './index.css';
 
-ReactDOM.render(<div>Hello World</div>, document.getElementById("root"));
+const initialState = [
+  {
+    id: Math.round(Math.random() * 1000),
+    title: 'Book 1',
+    category: 'Biography',
+  },
+  {
+    id: Math.round(Math.random() * 1000),
+    title: 'Book 2',
+    category: 'Learning',
+  },
+];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+const store = createStore(bookReducer, { books: initialState });
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'),
+);
