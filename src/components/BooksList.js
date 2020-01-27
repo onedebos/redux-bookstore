@@ -1,7 +1,7 @@
-import React from "react";
-import Book from "./Book";
+import React from 'react';
+import Book from './Book';
 
-const BooksList = () => {
+const BooksList = () => (
   <div>
     <table>
       <thead>
@@ -13,7 +13,8 @@ const BooksList = () => {
         <Book />
       </tbody>
     </table>
-  </div>;
-};
+  </div>
+);
+
 
 export default BooksList;

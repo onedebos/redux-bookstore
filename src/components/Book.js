@@ -1,5 +1,4 @@
-import React from "react";
-import { tsConstructorType } from "@babel/types";
+import React from 'react';
 
 class Book extends React.Component {
   render() {
