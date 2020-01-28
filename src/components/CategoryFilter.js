@@ -13,7 +13,7 @@ const CategoryFilter = ({ CategoryFilter }) => {
       <span>Filter Books: </span>
       <div>
         <select
-          className="filter-books"
+          className="filter-books arrow"
           name="category"
           onChange={handleChange}
         >

@@ -11,8 +11,9 @@ form {
 }
 
 .add-book-input {
-  padding: 1em;
+  padding-left: 12px;
   border: none;
+  margin: 10px 10px 10px 0;
   width: 664px;
   height: 45px;
   border-radius: 4px;
@@ -35,15 +36,16 @@ form {
 }
 
 .add-book-btn {
-  margin-left: 1em;
+  margin: 12px 0 0 8px;
   background-color: #0290ff;
   color: white;
   border: 0px solid black;
   font-weight: 700;
   padding: 1em;
-  width: 200px;
+  width: 186px;
   cursor: pointer;
   border-radius: 3px;
+  height: 44px;
 }
 
 .form-title {

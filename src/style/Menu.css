@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap"); 
+
 .menu {
   background-color: white;
   display: flex;
   justify-content: space-around;
   flex-basis: content;
+  font-family: Montserrat; 
 }
 
 h1 {

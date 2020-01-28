@@ -68,7 +68,7 @@ class BooksForm extends React.Component {
             onChange={this.handleChange}
           />
           <select
-            className="add-book-cat"
+            className="filter-books arrow"
             name="categories"
             value={category}
             onChange={this.handleChange}
