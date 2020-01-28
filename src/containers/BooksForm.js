@@ -29,7 +29,7 @@ class BooksForm extends React.Component {
   makeBook() {
     const { title, category } = this.state;
     return {
-      id: Math.round(Math.random() * 1000),
+      id: Math.round(Math.random() * 100000),
       title,
       category,
     };

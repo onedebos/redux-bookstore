@@ -10,12 +10,12 @@ import './index.css';
 const initialState = {
   books: [
     {
-      id: Math.round(Math.random() * 1000),
+      id: Math.round(Math.random() * 100000),
       title: 'Book 1',
       category: 'Biography',
     },
     {
-      id: Math.round(Math.random() * 1000),
+      id: Math.round(Math.random() * 100000),
       title: 'Book 2',
       category: 'Learning',
     },
