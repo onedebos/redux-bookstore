@@ -1,17 +1,17 @@
-import React from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import { createBook } from "../actions/index";
-import categoriesBook from "../constants/categoriesBook";
-import "../style/BooksForm.css";
+import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../actions/index';
+import categoriesBook from '../constants/categoriesBook';
+import '../style/BooksForm.css';
 
 class BooksForm extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: "",
-      category: categoriesBook[0]
+      title: '',
+      category: categoriesBook[0],
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -19,10 +19,10 @@ class BooksForm extends React.Component {
   }
 
   handleChange(e) {
-    if (e.target.name === "title") {
+    if (e.target.name === 'title') {
       this.setState({ title: e.target.value });
     }
-    if (e.target.name === "categories") {
+    if (e.target.name === 'categories') {
       this.setState({ category: e.target.value });
     }
   }
@@ -32,12 +32,12 @@ class BooksForm extends React.Component {
     return {
       id: Math.round(Math.random() * 100000),
       title,
-      category
+      category,
     };
   }
 
   clearForm() {
-    this.setState({ title: "", category: categoriesBook[0] });
+    this.setState({ title: '', category: categoriesBook[0] });
   }
 
   handleSubmit(e) {
@@ -87,11 +87,11 @@ class BooksForm extends React.Component {
 const mapDispatchToProps = dispatch => ({
   createBook: book => {
     dispatch(createBook(book));
-  }
+  },
 });
 
 BooksForm.propTypes = {
-  createBook: PropTypes.instanceOf(Function).isRequired
+  createBook: PropTypes.instanceOf(Function).isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(BooksForm);

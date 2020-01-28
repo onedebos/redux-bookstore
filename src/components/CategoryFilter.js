@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import categoriesBook from "../constants/categoriesBook";
-import "../style/CategoryFilter.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import categoriesBook from '../constants/categoriesBook';
+import '../style/CategoryFilter.css';
 
 const CategoryFilter = ({ CategoryFilter }) => {
   const handleChange = e => {
@@ -30,7 +30,7 @@ const CategoryFilter = ({ CategoryFilter }) => {
 };
 
 CategoryFilter.propTypes = {
-  CategoryFilter: PropTypes.func.isRequired
+  CategoryFilter: PropTypes.func.isRequired,
 };
 
 export default CategoryFilter;

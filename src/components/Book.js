@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "../style/Book.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../style/Book.css';
 
 function Book({ book, deleteBook }) {
   const handleRemoveBook = () => {
@@ -23,8 +23,8 @@ Book.propTypes = {
   book: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired
+    category: PropTypes.string.isRequired,
   }).isRequired,
-  deleteBook: PropTypes.func.isRequired
+  deleteBook: PropTypes.func.isRequired,
 };
 export default Book;
