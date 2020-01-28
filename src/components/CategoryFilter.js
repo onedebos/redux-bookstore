@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import categoriesBook from "../constants/categoriesBook";
-import "./CategoryFilter.css";
+import "../style/CategoryFilter.css";
 
 const CategoryFilter = ({ CategoryFilter }) => {
   const handleChange = e => {

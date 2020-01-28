@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Book.css";
+import "../style/Book.css";
 
 function Book({ book, deleteBook }) {
   const handleRemoveBook = () => {
