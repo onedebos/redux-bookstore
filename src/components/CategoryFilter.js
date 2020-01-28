@@ -1,20 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
-import categoriesBook from "../constants/categoriesBook";
+import React from 'react';
+import PropTypes from 'prop-types';
+import categoriesBook from '../constants/categoriesBook';
 
-const CategoryFilter = props => {
-  const { onChange } = props;
-  const handleChange = event => {
-    const { value } = event.target;
-    onChange(value);
+const CategoryFilter = ({ CategoryFilter }) => {
+  const handleChange = e => {
+    CategoryFilter(e.target.value);
   };
 
   return (
     <div>
       <select name="category" onChange={handleChange}>
-        <option>All</option>
+        <option value="All">All</option>
         {categoriesBook.map(category => (
-          <option key={category}>{category}</option>
+          <option key={category} value={category}>{category}</option>
         ))}
       </select>
     </div>
@@ -22,7 +20,7 @@ const CategoryFilter = props => {
 };
 
 CategoryFilter.propTypes = {
-  onChange: PropTypes.func.isRequired
+  CategoryFilter: PropTypes.func.isRequired,
 };
 
 export default CategoryFilter;

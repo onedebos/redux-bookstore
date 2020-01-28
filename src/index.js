@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import bookReducer from './reducers/books';
+import rootReducer from './reducers/index';
 import App from './components/App';
 import './index.css';
 
@@ -21,7 +21,7 @@ const initialState = {
     },
   ],
 };
-const store = createStore(bookReducer, initialState);
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
   <Provider store={store}>
