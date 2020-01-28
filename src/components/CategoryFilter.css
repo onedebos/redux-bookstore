@@ -1,0 +1,19 @@
+.filter-drop {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 2em auto;
+}
+
+span {
+  margin: 1em 1em;
+  font-size: 1.3em;
+}
+
+.filter-books {
+  width: 400px;
+  background-color: white;
+  border: none;
+  padding: 1em;
+  font-size: 1.2em;
+}
