@@ -4,10 +4,12 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 const bookReducer = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
-      return [...state, action.book];
+      return { ...state, books: [...state.books, action.book] };
     case REMOVE_BOOK:
-      return state.filter(storedBook => storedBook.id !== action.book.id);
+      console.log('state', state);
+      return state.books.filter(storedBook => storedBook.id !== action.book.id);
     default:
+      console.log('initial state', state);
       return state;
   }
 };

@@ -6,20 +6,22 @@ import bookReducer from './reducers/books';
 import App from './components/App';
 import './index.css';
 
-const initialState = [
-  {
-    id: Math.round(Math.random() * 1000),
-    title: 'Book 1',
-    category: 'Biography',
-  },
-  {
-    id: Math.round(Math.random() * 1000),
-    title: 'Book 2',
-    category: 'Learning',
-  },
-];
 
-const store = createStore(bookReducer, { books: initialState });
+const initialState = {
+  books: [
+    {
+      id: Math.round(Math.random() * 1000),
+      title: 'Book 1',
+      category: 'Biography',
+    },
+    {
+      id: Math.round(Math.random() * 1000),
+      title: 'Book 2',
+      category: 'Learning',
+    },
+  ],
+};
+const store = createStore(bookReducer, initialState);
 
 ReactDOM.render(
   <Provider store={store}>
