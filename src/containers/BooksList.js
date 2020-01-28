@@ -1,10 +1,11 @@
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import React from 'react';
-import { removeBook } from '../actions';
-import Book from '../components/Book';
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import React from "react";
+import { removeBook } from "../actions";
+import Book from "../components/Book";
+import CategoryFilter from "../components/CategoryFilter";
 
-const BooksList = ({ books, removeBook }) => {
+const BooksList = ({ books, removeBook, filter, changeFilter }) => {
   const handleRemoveBook = book => {
     removeBook(book);
   };
@@ -20,27 +21,31 @@ const BooksList = ({ books, removeBook }) => {
           </tr>
         </thead>
         <tbody>
-          { books.map(book => <Book book={book} key={book.id} deleteBook={handleRemoveBook} />)}
+          {books.map(book => (
+            <Book book={book} key={book.id} deleteBook={handleRemoveBook} />
+          ))}
         </tbody>
       </table>
     </div>
   );
 };
 
-const mapStateToProps = state => ({ books: state.books });
+const mapStateToProps = state => ({ books: state.books, filter: state.filter });
 
 const mapDispatchToProps = dispatch => ({
-  removeBook: book => dispatch(removeBook(book)),
+  removeBook: book => dispatch(removeBook(book))
 });
 
 BooksList.defaultProps = {
   books: [],
+  filter: "All"
 };
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
+  filter: PropTypes.string
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
