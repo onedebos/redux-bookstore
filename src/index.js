@@ -11,8 +11,8 @@ const initialState = {
   books: [
     {
       id: Math.round(Math.random() * 100000),
-      title: 'Book 1',
-      category: 'Biography',
+      title: 'Under the Udala Trees by Chinelo Okparanta',
+      category: 'Action',
     },
     {
       id: Math.round(Math.random() * 100000),
