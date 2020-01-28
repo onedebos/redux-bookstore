@@ -6,10 +6,11 @@ const bookReducer = (state = [], action) => {
     case CREATE_BOOK:
       return { ...state, books: [...state.books, action.book] };
     case REMOVE_BOOK:
-      console.log('state', state);
-      return state.books.filter(storedBook => storedBook.id !== action.book.id);
+      return {
+        ...state,
+        books: state.books.filter(storedBook => storedBook.id !== action.book.id),
+      };
     default:
-      console.log('initial state', state);
       return state;
   }
 };
