@@ -1,0 +1,24 @@
+.menu {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: content;
+}
+
+h1 {
+  margin-left: 4em;
+  color: #0290ff;
+}
+
+p {
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.categories {
+  color: #c0c0c0;
+}
