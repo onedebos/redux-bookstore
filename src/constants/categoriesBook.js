@@ -7,4 +7,5 @@ const categoriesBook = [
   'Learning',
   'Sci-Fi',
 ];
+
 export default categoriesBook;

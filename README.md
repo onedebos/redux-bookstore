@@ -57,6 +57,12 @@ npm start
 - Twitter: [@twitterhandle](https://twitter.com/debosthefirst)
 - Linkedin: [linkedin](https://www.linkedin.com/in/adebola-niran/)
 
+👤 **Johan Stiven Tinjacá Tocora**
+
+- Github: [@jstiven01](https://github.com/jstiven01)
+- Twitter: [@TinjacaJohan](https://twitter.com/TinjacaJohan)
+- Linkedin: [Johan Tinjacá](https://www.linkedin.com/in/johanstiventinjaca/)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
@@ -64,9 +70,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-
-# weather-app
-
-## References
-
-- [Calculator App](https://github.com/ahfarmer/calculator)

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
 import categoriesBook from '../constants/categoriesBook';
+import '../style/BooksForm.css';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -56,13 +57,28 @@ class BooksForm extends React.Component {
     ));
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" name="title" value={title} onChange={this.handleChange} />
-        <select name="categories" value={category} onChange={this.handleChange}>
-          {optionCategories}
-        </select>
-        <button type="submit">
-          Submit
-        </button>
+        <div className="form-title">ADD NEW BOOK</div>
+        <div className="add-book">
+          <input
+            className="add-book-input"
+            placeHolder="add a new book.."
+            type="text"
+            name="title"
+            value={title}
+            onChange={this.handleChange}
+          />
+          <select
+            className="filter-books arrow"
+            name="categories"
+            value={category}
+            onChange={this.handleChange}
+          >
+            {optionCategories}
+          </select>
+          <button className="add-book-btn" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     );
   }
