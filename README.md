@@ -11,6 +11,8 @@ This is a bookstore project built using Redux.
 - ES6
 - Webpack
 
+![screenshot](https://res.cloudinary.com/onedebeos/image/upload/f_auto,q_auto/v1582185339/personal-portfolio/app2_ry23fm.png)
+
 ## Linters used
 
 - ESlint
