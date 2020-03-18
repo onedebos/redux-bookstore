@@ -43,3 +43,20 @@ p:hover {
 .price {
   padding-left: 1em;
 }
+
+@media (min-width: 350px) and (max-width: 415px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-left: 2em;
+  }
+
+  .cartMenu {
+    justify-content: center;
+  }
+  p {
+    margin-left: 1em;
+  }
+}

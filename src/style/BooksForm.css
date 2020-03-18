@@ -63,3 +63,22 @@ form {
 .addBookForm {
   width: 80%;
 }
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+  .add-book {
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: center;
+  }
+
+  .add-book-btn {
+    width: 200px;
+  }
+}

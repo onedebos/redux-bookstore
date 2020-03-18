@@ -9,7 +9,7 @@ function Book({ book, deleteBook, addToCart }) {
 
   return (
     <div className="Book-Panel">
-      <div>
+      <div className="bookInfo">
         <p className="Book-cat">{book.category}</p>
         <h2 className="title">{book.title}</h2>
         <p>${book.price}</p>

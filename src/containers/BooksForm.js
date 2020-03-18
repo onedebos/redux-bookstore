@@ -59,26 +59,28 @@ class BooksForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit} className="addBookForm">
         <div className="form-title">ADD NEW BOOK</div>
-        <div className="add-book">
-          <input
-            className="add-book-input"
-            placeholder="add a new book.."
-            type="text"
-            name="title"
-            value={title}
-            onChange={this.handleChange}
-          />
-          <select
-            className="filter-books arrow"
-            name="categories"
-            value={category}
-            onChange={this.handleChange}
-          >
-            {optionCategories}
-          </select>
-          <button className="add-book-btn" type="submit">
-            Submit
-          </button>
+        <div className="formWrapper">
+          <div className="add-book">
+            <input
+              className="add-book-input"
+              placeholder="add a new book.."
+              type="text"
+              name="title"
+              value={title}
+              onChange={this.handleChange}
+            />
+            <select
+              className="filter-books arrow"
+              name="categories"
+              value={category}
+              onChange={this.handleChange}
+            >
+              {optionCategories}
+            </select>
+            <button className="add-book-btn" type="submit">
+              Submit
+            </button>
+          </div>
         </div>
       </form>
     );
