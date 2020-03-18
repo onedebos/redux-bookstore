@@ -1,7 +1,7 @@
-import React from "react";
-import "../style/Menu.css";
+import React from 'react';
+import '../style/Menu.css';
 
-const Menu = ({ totalBooks }) => (
+const Menu = ({ totalBooks, totalPrice }) => (
   <div className="menu">
     <div>
       <h1 className="menu-title">Bookstore CMS</h1>
@@ -12,6 +12,7 @@ const Menu = ({ totalBooks }) => (
       <p className="cart">
         <i className="material-icons cartIcon">shopping_cart</i>
         <span>{totalBooks}</span>
+        <span className="price">${totalPrice}</span>
       </p>
     </div>
   </div>

@@ -12,6 +12,7 @@ function Book({ book, deleteBook, addToCart }) {
       <div>
         <p className="Book-cat">{book.category}</p>
         <h2 className="title">{book.title}</h2>
+        <p>${book.price}</p>
       </div>
       <div className="buttons">
         <button className="remove" type="button" onClick={handleRemoveBook}>

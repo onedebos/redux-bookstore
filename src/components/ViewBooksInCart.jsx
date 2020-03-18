@@ -11,7 +11,7 @@ export const ViewBooksInCart = ({ bookInCart }) => {
   ));
   return (
     <div>
-      <h1>Books In Cart</h1>
+      {bookInCart.length < 1 ? '' : <h1>Books In Cart</h1>}
       {displayBooks}
     </div>
   );

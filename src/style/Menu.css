@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap');
 
 .menu {
   background-color: white;
@@ -38,4 +38,8 @@ p:hover {
   font-size: 1em;
   margin: 0;
   color: #0290ff;
+}
+
+.price {
+  padding-left: 1em;
 }

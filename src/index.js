@@ -12,13 +12,13 @@ const initialState = {
       id: Math.round(Math.random() * 100000),
       title: 'Under the Udala Trees',
       category: 'Action',
-      price: 200
+      price: 15
     },
     {
       id: Math.round(Math.random() * 100000),
       title: 'Things Fall Apart',
       category: 'Kids',
-      price: 100
+      price: 12
     }
   ]
 };
