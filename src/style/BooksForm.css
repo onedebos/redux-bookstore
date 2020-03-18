@@ -59,3 +59,7 @@ form {
   letter-spacing: -0.18px;
   color: #888888;
 }
+
+.addBookForm {
+  width: 80%;
+}

@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap');
 
 .Book-Panel {
-  width: 1200px;
+  width: 80%;
   height: 170px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   margin: 2em auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .Book-cat {
@@ -25,7 +27,7 @@
 .title {
   width: 300px;
   height: 29px;
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -37,11 +39,29 @@
 }
 
 .remove {
-  margin: 3em 1.9em;
-  font-family: "Roboto Slab";
+  margin: 2em 1em;
+  font-family: 'Roboto Slab';
   border: 0px;
   background-color: white;
   cursor: pointer;
   font-weight: 600;
-  color: #4386bf;
+  color: white;
+  background-color: #4386bf;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+}
+
+.add,
+.subtract {
+  border-radius: 0.5em;
+  border: 0px;
+  font-weight: 600;
+  padding: 0.8em 1em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.add {
+  background-color: rgb(90, 89, 89);
+  color: white;
 }

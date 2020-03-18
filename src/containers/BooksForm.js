@@ -11,7 +11,7 @@ class BooksForm extends React.Component {
 
     this.state = {
       title: '',
-      category: categoriesBook[0],
+      category: categoriesBook[0]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -32,7 +32,7 @@ class BooksForm extends React.Component {
     return {
       id: Math.round(Math.random() * 100000),
       title,
-      category,
+      category
     };
   }
 
@@ -46,6 +46,7 @@ class BooksForm extends React.Component {
     const { createBook } = this.props;
     if (title) {
       createBook(this.makeBook());
+
       this.clearForm();
     }
   }
@@ -56,12 +57,12 @@ class BooksForm extends React.Component {
       <option key={category}>{category}</option>
     ));
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="addBookForm">
         <div className="form-title">ADD NEW BOOK</div>
         <div className="add-book">
           <input
             className="add-book-input"
-            placeHolder="add a new book.."
+            placeholder="add a new book.."
             type="text"
             name="title"
             value={title}
@@ -87,11 +88,11 @@ class BooksForm extends React.Component {
 const mapDispatchToProps = dispatch => ({
   createBook: book => {
     dispatch(createBook(book));
-  },
+  }
 });
 
 BooksForm.propTypes = {
-  createBook: PropTypes.instanceOf(Function).isRequired,
+  createBook: PropTypes.instanceOf(Function).isRequired
 };
 
 export default connect(null, mapDispatchToProps)(BooksForm);
