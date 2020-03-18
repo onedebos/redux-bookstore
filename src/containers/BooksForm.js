@@ -32,7 +32,8 @@ class BooksForm extends React.Component {
     return {
       id: Math.round(Math.random() * 100000),
       title,
-      category
+      category,
+      price: 10
     };
   }
 
