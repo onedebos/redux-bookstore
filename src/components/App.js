@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Menu from './Menu';
 import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
+import { ViewBooksInCart } from '../components/ViewBooksInCart';
 
 function App() {
   const [totalBooks, setTotalBooks] = useState(0);
@@ -10,6 +11,7 @@ function App() {
   const addToCart = book => {
     const books = bookInCart.concat(book);
     setBookInCart(books);
+    console.log(bookInCart);
     setTotalBooks(bookInCart.length + 1);
   };
 
@@ -18,6 +20,7 @@ function App() {
       <Menu totalBooks={totalBooks} />
       <BooksList totalBooks={totalBooks} addToCart={addToCart} />
       <BooksForm />
+      <ViewBooksInCart bookInCart={bookInCart} />
     </div>
   );
 }
