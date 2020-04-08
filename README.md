@@ -53,6 +53,13 @@ or
 ```
 npm start
 ```
+### Automated Tests
+- Currently, there are no automated tests avaailable for this project. This will be implemented at a later date.
+
+### Planned features
+- Checkout button
+- Checkout page
+- Style cart items better
 
 ## Authors
 
