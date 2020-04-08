@@ -13,6 +13,9 @@ This is a bookstore project built using Redux.
 
 ![screenshot](https://res.cloudinary.com/onedebeos/image/upload/f_auto,q_auto/v1582185339/personal-portfolio/app2_ry23fm.png)
 
+## Video demo
+![bookstr](./bookstr.gif)
+
 ## Linters used
 
 - ESlint
